@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Add a Book</title>
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="container mx-auto p-10">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold">Book Manager</h1>
+      <p class="text-gray-400 mt-2">Manage your collection with ease</p>
+    </div>
+
+    <div class="max-w-lg mx-auto bg-gray-800 rounded-lg p-8 shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4">Add a Book</h2>
+      <form action="/create" method="post" class="space-y-4">
+        <input
+          type="text"
+          name="title"
+          placeholder="Book Title"
+          class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="text"
+          name="author"
+          placeholder="Author"
+          class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="text"
+          name="genre"
+          placeholder="Genre"
+          class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="text"
+          name="image"
+          placeholder="Image URL"
+          class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <input
+          type="number"
+          name="publishedYear"
+          placeholder="Published Year"
+          class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+        >
+          Add Book
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
